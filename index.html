@@ -12,32 +12,33 @@
 
 <body>
   <header>
-    <img src="lab-assets/logo.png" alt="logo">
-    <div id="left head">
-      <h1>Delicious</h1>
-      <h4>THE BEST FOOD BLOG ON THE WEB</h4>
+    <div id="header-flex-horizontal">
+      <div id="header-flex-logo">
+        <img id="fork-knife" src="lab-assets/logo.png" alt="logo">
+        <div id="delicious-text">
+          <h1>Delicious</h1>
+          <h4>THE BEST FOOD BLOG ON THE WEB</h4>
+        </div>
+      </div>
+      <div id="header-flex-space"></div>
+      <div id="header-flex-social">
+        <img src="lab-assets/fb-icon.png" alt="facebook icon">
+        <img src="lab-assets/twit-icon.png" alt="twitter icon">
+        <img src="lab-assets/gp-icon.png" alt="google plus icon">
+        <img src="lab-assets/insta-icon.png" alt="instagram icon">
+        <img src="lab-assets/flic-icon.png" alt="flic icon">
+        <img src="lab-assets/pint-icon.png" alt="pinterest icon">
+        <img src="lab-assets/rss-icon.png" alt="rss icon">
+        <img src="lab-assets/mail-icon.png" alt="mail icon">
+      </div>
     </div>
-    <div id="right head">
-      <ul>
-        <li><img src="lab-assets/fb-icon.png" alt="facebook icon"></li>
-        <li><img src="lab-assets/twit-icon.png" alt="twitter icon"></li>
-        <li><img src="lab-assets/gp-icon.png" alt="google plus icon"></li>
-        <li><img src="lab-assets/insta-icon.png" alt="instagram icon"></li>
-        <li><img src="lab-assets/flic-icon.png" alt="flic icon"></li>
-        <li><img src="lab-assets/pint-icon.png" alt="pinterest icon"></li>
-      </ul>
-      <ul>
-        <li><img src="lab-assets/rss-icon.png" alt="rss icon"></li>
-        <li><img src="lab-assets/mail-icon.png" alt="mail icon"></li>
-      </ul>
-    </div>
-    <img src="" alt="">
+    <!-- <img src="" alt=""> -->
   </header>
   <main>
     <div id="left body head">
-    <h1>Chocolate Pizza</h1>
-    <h4>POSTED ON 15 DEC 2013/DESSERTS</h4>
-  </div>
+      <h2>Chocolate Pizza</h2>
+      <h4>POSTED ON 15 DEC 2013/DESSERTS</h4>
+    </div>
     <div id="right body head"><img src="lab-assets/print-icon.png" alt="print icon">
       <h4>PRINT</h4>
     </div>
@@ -54,26 +55,35 @@
       at least two hours before serving.</p>
     <article>
       <img src="lab-assets/list-bg.png" alt="list background">
-    <div id="left recipe">
-      <li><input type="checkbox" id="milk"><label for="milk"></label></input></li>
-      <li><input type="checkbox" id="marscapone"><label for="marscapone"></label></input></li>
-      <li><input type="checkbox" id="pink"><label for="pink"></label></input></li>
-      <li><input type="checkbox" id="figs"><label for="figs"></label></input></li>
-      <li><input type="checkbox" id="brSugar"><label for="brSugar"></label></input></li>
-      <li><input type="checkbox" id="water"><label for="water"></label></input></li>
-    </div>
-    <div id="right recipe">
-      <li><input type="checkbox" id="cream"><label for="cream"></label></input></li>
-      <li><input type="checkbox" id="gr_Sugar"><label for="gr_Sugar"></label></input></li>
-      <li><input type="checkbox" id="yolks"><label for="yolks"></label></input></li>
-      <li><input type="checkbox" id="lemon"><label for="lemon"></label></input></li>
-      <li><input type="checkbox" id="butter"><label for="butter"></label></input></li>
-      <li><input type="checkbox" id="pecans"><label for="pecans"></label></input></li>
-    </div>
-  </article>
+      <div id="recipe">
+        <div id="recipe-left">
+          <ul>
+            <li><input type="checkbox" id="milk"><label for="milk">1 1/2 cups milk</input></li>
+            <li><input type="checkbox" id="marscapone"><label for="marscapone">1/2 mascarpone</label></input></li>
+            <li><input type="checkbox" id="pink"><label for="pink">1/2 tsp pink salt</label></input></li>
+            <li><input type="checkbox" id="figs"><label for="figs">1 lb Black Mission Figs</label></input></li>
+            <li><input type="checkbox" id="brSugar"><label for="brSugar">1/2 cup brown sugar</label></input></li>
+            <li><input type="checkbox" id="water"><label for="water">2-4 tbsp water</label></input></li>
+          </ul>
+        </div>
+        <div id="recipe-right">
+          <ul>
+            <li><input type="checkbox" id="cream"><label for="cream">1 1/2 cups heavy cream</label></input></li>
+            <li><input type="checkbox" id="gr_Sugar"><label for="gr_Sugar">1/3 granulated sugar</label></input></li>
+            <li><input type="checkbox" id="yolks"><label for="yolks">2 egg yolks</label></input></li>
+            <li><input type="checkbox" id="lemon"><label for="lemon">1 lemon, juiced</label></input></li>
+            <li><input type="checkbox" id="butter"><label for="butter">2 tbsp butter</label></input></li>
+            <li><input type="checkbox" id="pecans"><label for="pecans">1 cup honey roasted pecans, roughly
+                chopped</label></input></li>
+          </ul>
+        </div>  
+      </div>
+    </article>
   </main>
   <footer>
-    <img src="lab-assets/hr-img.png" alt="hr pic">
+    <div class="hr">
+      <img src="lab-assets/hr-img.png" alt="hr pic">
+    </div>
     <h4>Vanessa Stevenson</h4>
     <img src="lab-assets/van-pic.png" alt="Vanessa pic">
     <p>Food enthusiast, photography fan. Add a pinch of raw foodism and that's pretty much that's who I am.</p>
@@ -82,8 +92,9 @@
     </div>
     <div>
       <img src="lab-assets/small-logo.png" alt="small logo">
-      <p>Delicious &copy; 2013 . All Rights Reserved.</p>
-      <p>Proudly published with Ghost.</p>
+      <div id="footer-p">
+        <p>Delicious &copy; 2013 . All Rights Reserved.</p>
+        <p>Proudly published with Ghost.</p>
     </div>
   </footer>
 </body>
