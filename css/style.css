@@ -1,6 +1,5 @@
-* {
-  /* align-items: center; */
-}
+/* I found flexbox to be very useful during the lat lab, so I wanted to use it again here.
+*/
 
 header, main, footer{
   width: 900px;
@@ -14,7 +13,6 @@ margin: 0em 1em;
 }
 
 header h4 {
-
   font-size: 9px;
   margin: 0em .4em;
   }
@@ -26,42 +24,22 @@ header ul {
   margin-left: 10px;
 }
 
-header ul li {
-
-}
-
-
-#lefthead {
-
-}
-
-h2 {
-
-
-}
-
 #righthead {
   /* display: flex;
   flex-direction: row; */
   justify-content: right;
 }
 
-#leftbodyhead {
-
-}
-
 #rightbodyhead {
-  
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 main p {
-text-align: center;
+text-align: left;
 font-size: 1em;
-}
-
-main img {
-  /* justify-content: center; */
-
+text-indent: 2em;
 }
 
 main article img {
@@ -72,30 +50,18 @@ main article img {
 columns: 2;
 -webkit-columns: 2;
 -moz-columns: 2;
-}
-
-div article #rightrecipe {
-
+background: url('../lab-assets/list-bg.png') no-repeat fixed center;
 }
 
 .hr {
-
-}
-
-footer img {
-
-}
-
-footer h4 {
-
-}
-
-h4 img {
-  
+ width: 900px;
+ height: 10px;
+ margin-top: 50px;
 }
 
 #footer-p {
-  text-align: center;
+  /* text-align: center; */
+  /* justify-content: right; */
 }
 
 #fork-knife{
@@ -121,9 +87,54 @@ h4 img {
   align-content: flex-start;
 }
 
-
-
 #recipe{
   display: flex;
   flex-direction: row;
+}
+
+#recipe-title-header{
+  display: flex;
+  flex-direction: row;  
+  justify-content: space-between;
+}
+
+#print-button{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#print-image{
+  height: 15px;
+}
+
+#print-text{
+  margin: 0em .5em;
+}
+
+#footer-flex{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#vanessa-img{
+  height: 80px;
+  width: 80px;
+}
+
+#name-summary-flex{
+  margin: 0em 1em;
+}
+
+#share-button{
+  width: 200px;
+  background-color: #AA3333;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+#copy-footer{
+  text-align: center;
+  margin-top: 50px;
 }
